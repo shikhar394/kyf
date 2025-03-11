@@ -1,0 +1,55 @@
+# FOUNDER EVALUATION RUBRIC
+
+## Rating Scale
+1 = Poor/Insufficient
+2 = Average/Adequate
+3 = Good/Strong
+4 = Excellent/Exceptional
+
+## Evaluation Criteria
+
+### 1. Founders Past Success
+**Rating: 3.5/4**
+*Justification:* Rephael has a successful prior exit (Soluteo acquired by Ineat) and Alexis scaled a tech group to NASDAQ listing, demonstrating proven ability to build and exit companies.
+
+### 2. Hiring Capability
+**Rating: 3/4**
+*Justification:* They've attracted strong talent including an ex-Snowflake top performer for Head of Sales, showing ability to recruit high-caliber individuals in competitive markets.
+
+### 3. Fundraising
+**Rating: 2.5/4**
+*Justification:* While they've reached Series A stage, limited information is available about their previous fundraising success or current round progress.
+
+### 4. Founders Coachability
+**Rating: 3/4**
+*Justification:* Rephael's role as a mentor and Alexis's academic excellence suggest openness to learning, though direct evidence of coachability is limited in available materials.
+
+### 5. Market Size and Potential
+**Rating: 4/4**
+*Justification:* Addressing a massive market (systems spend >$250B with 24% CAGR, staff automation savings >$1T) with over 4M addressable companies.
+
+### 6. Competitive Landscape
+**Rating: 3/4**
+*Justification:* According to their pitch, there's "no clear go-to option" in their space, giving them first-mover advantage, though this claim requires validation.
+
+### 7. Traction
+**Rating: 3/4**
+*Justification:* Strong unit economics (LTV/CAC ~19x, 95% customer retention) indicate product-market fit, though specific customer numbers aren't provided.
+
+### 8. Lead or Follow Round or Tier 1 Investor?
+**Rating: 2/4**
+*Justification:* Insufficient information about current investors or whether they're seeking lead vs. follow-on investment in this Series A round.
+
+### 9. Scalability
+**Rating: 3.5/4**
+*Justification:* Their Snowflake Native App approach and 90% gross margins suggest strong scalability potential with limited marginal costs for new customers.
+
+## Overall Assessment
+
+**Total Score: 27.5/36 (76%)**
+
+Maxa's founding team brings complementary strengths with Rephael's technical and entrepreneurial background paired with Alexis's experience scaling large technology businesses. Their strongest attributes are the massive market opportunity they're addressing and their product's apparent scalability. Areas requiring further investigation include their fundraising history, current investor composition, and validation of their competitive positioning claims.
+
+The founders' track record of prior success (exit and NASDAQ scaling) is particularly compelling and suggests they have the experience necessary to navigate the challenges of building an enterprise SaaS business. Their ability to attract strong talent (ex-Snowflake) also speaks to their leadership capabilities and industry credibility.
+
+**Recommendation:** Proceed with deeper due diligence, particularly focusing on technical validation, customer references, and competitive landscape analysis.

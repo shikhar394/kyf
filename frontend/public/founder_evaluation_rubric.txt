@@ -1,0 +1,50 @@
+# FOUNDER EVALUATION RUBRIC
+
+## Rating Scale
+1 - Poor/Insufficient
+2 - Average/Adequate
+3 - Good/Strong
+4 - Exceptional/Outstanding
+
+## Evaluation Criteria
+
+### 1. Founders' Past Success
+**Rating: 4/4**
+*Justification:* Both founders have impressive track records with successful exits - Raphael with Soluteo (acquired by Ineat) and John with multiple companies including Optosecurity (sold to Vanderlande/Toyota). Their combined 40+ years of relevant experience in enterprise software and finance is exceptional.
+
+### 2. Hiring Capability
+**Rating: 3/4**
+*Justification:* The team has attracted strong talent including a 30-year software industry veteran from Snowflake and other experienced professionals, demonstrating good hiring capability, though the team is still relatively small at 11-50 employees.
+
+### 3. Fundraising
+**Rating: 3/4**
+*Justification:* Successfully raised $21M in Series A funding, and John Morris has previous experience taking LANDR from pre-revenue to Series A, showing strong fundraising capabilities.
+
+### 4. Founders' Coachability
+**Rating: 3/4**
+*Justification:* Raphael's role as a mentor and his participation in entrepreneurship programs suggests openness to learning and teaching, while John's diverse industry experience across multiple companies indicates adaptability.
+
+### 5. Market Size and Potential
+**Rating: 4/4**
+*Justification:* The addressable market is massive with >$250B systems spend (24% CAGR), >$1T in potential staff automation cost savings, and >4M addressable companies running ERPs.
+
+### 6. Competitive Landscape
+**Rating: 3/4**
+*Justification:* Their Snowflake Native App approach and Universal Business Data Model provide strong differentiation in the ERP insights space, though specific competitor analysis is limited in the available information.
+
+### 7. Traction
+**Rating: 3/4**
+*Justification:* Strong metrics with 95% customer retention rate, 90% gross margin, and impressive LTV/CAC ratio (~19x) indicate solid traction, though current ARR of $3M suggests early but promising market adoption.
+
+### 8. Lead or Follow Round or Tier 1 Investor?
+**Rating: 3/4**
+*Justification:* Successfully secured Series A funding of $21M, indicating investor confidence, though information about specific investors and whether this was a lead or follow-on investment is not specified.
+
+### 9. Scalability
+**Rating: 4/4**
+*Justification:* The Snowflake Native App approach provides inherent scalability, and the projected ARR growth from $3M to $19M over 24 months demonstrates a clear path to scale. The high margins (90%) and strong unit economics support scalable growth.
+
+## Overall Assessment
+**Total Score: 30/36 (83%)**
+
+Maxa's founding team combines deep technical expertise with strong financial and operational leadership. Their previous successful exits, extensive domain experience, and impressive early traction position them well for success in the enterprise data automation market. The massive market opportunity and strong unit economics further enhance their potential for significant growth.

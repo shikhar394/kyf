@@ -1,0 +1,11 @@
+# Top 5 Questions to Derisk Maxa Investment
+
+1. **Customer Traction and Validation**: While the deck mentions a 95% retention rate, it doesn't provide specific customer numbers, logos, or case studies. How many paying customers does Maxa currently have, and can they provide references or case studies demonstrating ROI?
+
+2. **Go-to-Market Strategy and Sales Execution**: The deck projects growth from $3M to $19M ARR over 24 months, but how will they achieve this? What's their current CAC, sales cycle length, and how are they planning to scale their sales team while maintaining the claimed 19x LTV/CAC ratio?
+
+3. **Competitive Differentiation**: The deck shows a fragmented landscape of competitors across different categories, but doesn't clearly articulate why customers would choose Maxa over alternatives or combinations of existing solutions. What's their sustainable competitive advantage?
+
+4. **Technical Moat and IP**: How defensible is their Universal Business Data Model (UBDM) and what makes it difficult for competitors to replicate? What specific technical innovations have they developed that create barriers to entry?
+
+5. **Financial Runway and Unit Economics**: The deck mentions impressive metrics like 90% gross margins, but lacks details on burn rate, cash position, and detailed unit economics. How much capital do they need to reach profitability, and what are the key assumptions in their financial model?%                                                                                                                

@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manus"
+version = "0.1.0"
+description = "Manus is a versatile agent that can solve various tasks using multiple tools"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+requires-python = ">=3.12"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "tomli~=2.0.1",
+    "pydantic~=2.10.4",
+    "openai~=1.58.1",
+    "tenacity~=9.0.0",
+    "pyyaml~=6.0.2",
+    "loguru~=0.7.3",
+    "numpy",
+    "datasets~=3.2.0",
+    "fastapi~=0.115.11",
+    "html2text~=2024.2.26",
+    "gymnasium~=1.0.0",
+    "pillow~=10.4.0",
+    "browsergym~=0.13.3",
+    "uvicorn~=0.34.0",
+    "unidiff~=0.7.5",
+    "browser-use~=0.1.40",
+    "googlesearch-python~=1.3.0",
+    "aiofiles~=24.1.0",
+    "pydantic_core~=2.27.2",
+    "colorama~=0.4.6",
+    "playwright~=1.49.1",
+    "browser-use~=0.1.40",
+    "python-multipart~=0.0.12",
+]
+
+[project.scripts]
+openmanus = "main:main"

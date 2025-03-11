@@ -1,0 +1,56 @@
+# Maxa Founders Background Check
+
+## Company Overview
+Maxa is a Snowflake native app startup focused on automating financial and ERP insights for enterprises. The company addresses the challenge of extracting actionable insights from complex ERP systems, a decades-old problem in the industry.
+
+## Founders
+
+### 1. Rephael Steinman (Co-Founder, Co-CEO)
+- **Experience**: 20+ years in software engineering and enterprise systems
+- **Previous Ventures**: Founded three enterprise software companies serving diverse sectors in North America and EMEA
+- **Notable Achievement**: Successfully exited a prior enterprise data software company (Soluteo, which was acquired by Ineat)
+- **Education**: BAC, B. Ing. from Université de Sherbrooke (1996-2001)
+- **Other Roles**: 
+  - Mentor at Next AI (Feb 2020 - Present)
+  - Previously Principal at Coherence 45 (Feb 2017 - 2018)
+  - Senior Vice President & Co-Founder at Soluteo (Jan 2002 - Jun 2017)
+- **Additional Information**: Also serves as an advisor, mentor, and speaker in the business and entrepreneurship community
+
+### 2. Alexis C. Steinman (Co-Founder, Co-CEO)
+- **Experience**: Seasoned executive with experience leading startup to NASDAQ-listed businesses in growth environments with global scale
+- **Previous Role**: Senior Vice President at Anuvu (formerly NASDAQ:ENT) from 2011-2019
+- **Notable Achievement**: Previously led USD 550 million (CAD 725 million) technology business/P&L with several hundred employees globally
+- **Education**: 
+  - MBA from HEC Montréal (2010-2011)
+  - MBA studies at National University of Singapore Business School (2011)
+- **Previous Experience**:
+  - Board Member - Quebec Chapter at Association of Corporate Counsel (2009-2011)
+  - Legal Counsel at Transcontinental (May 2009 - Aug 2010)
+  - Legal Counsel & Member of Canada's Delegation for International Air Services Treaties at Transat (Feb 2007 - Apr 2009)
+- **Awards**: 
+  - Academic Excellence Award from HEC MBA (Aug 2011)
+  - Academic Excellence Scholarship from HEC MBA (Aug 2011)
+
+## Company Solution
+Maxa offers a suite of products:
+1. Maxa Connect: Free Snowflake connectors for raw data extraction
+2. Maxa Translate: Core transformation engine to Universal Business Data Model (UBDM)
+3. Maxa Perform: Library of automated analytics components
+4. Executive Hub: Visualization library for dashboards and reports
+
+## Key Differentiators
+- Native Snowflake app ensuring data security and governance
+- Universal Business Data Model simplifying complex ERP data
+- Enterprise-grade solution with 100% accuracy for CFO-level requirements
+
+## Market Opportunity
+- Systems spend: >$250B (24% CAGR)
+- Staff automation cost savings: >$1T
+- Addressable companies: >4M
+
+## Financial Metrics
+- Projected ARR growth from $3M to $19M over 24 months
+- 95% customer retention rate
+- 90% gross margin (excluding onboarding)
+- ~$2.5M customer LTV
+- ~19x LTV/CAC ratio
