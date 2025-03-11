@@ -4,14 +4,18 @@ from datetime import datetime
 from json import dumps
 import os
 from app.agent.manus import Manus
+from typing import Dict, List, Set
 
 
-from fastapi import Body, FastAPI, HTTPException, Request, UploadFile, File
+from fastapi import Body, FastAPI, HTTPException, Request, UploadFile, File, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
+
+import pathlib
+from app.logger import PROJECT_ROOT
 
 
 app = FastAPI()
@@ -269,6 +273,47 @@ async def upload_file(file: UploadFile = File(...)):
         raise HTTPException(status_code=500, detail=f"Failed to upload file: {str(e)}")
     
 
+@app.get("/logs")
+async def get_logs():
+    logs_dir = PROJECT_ROOT / "logs"
+    if not logs_dir.exists():
+        return {"logs": []}
+    
+    # Get all log files and sort by modification time (newest first)
+    log_files = sorted(
+        logs_dir.glob("*.log"),
+        key=lambda x: x.stat().st_mtime,
+        reverse=True
+    )
+    
+    # Read the second most recent log file if available
+    if len(log_files) >= 2:
+        second_latest_log = log_files[1]  # Get the second log file
+        try:
+            with open(second_latest_log, 'r') as f:
+                # Get the last 100 lines
+                lines = f.readlines()[-100:]
+                return {"logs": lines}
+        except Exception as e:
+            raise HTTPException(
+                status_code=500,
+                detail=f"Failed to read log file: {str(e)}"
+            )
+    
+    return {"logs": []}
+
+
+@app.get("/get_analysis")
+async def get_analysis():
+    analysis_file = PROJECT_ROOT / "maxa_investment_analysis.md"
+    try:
+        with open(analysis_file, "r") as f:
+            analysis = f.read()
+        return {"analysis": analysis}
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Analysis file not found")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error reading analysis file: {str(e)}")
 
 
 
@@ -281,5 +326,4 @@ async def generic_exception_handler(request: Request, exc: Exception):
 
 if __name__ == "__main__":
     import uvicorn
-    
     uvicorn.run(app, host="localhost", port=5172)
