@@ -2,13 +2,17 @@ import asyncio
 import uuid
 from datetime import datetime
 from json import dumps
+import os
+from app.agent.manus import Manus
 
-from fastapi import Body, FastAPI, HTTPException, Request
+
+from fastapi import Body, FastAPI, HTTPException, Request, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
+
 
 app = FastAPI()
 
@@ -17,7 +21,7 @@ templates = Jinja2Templates(directory="templates")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:3000", "http://localhost:3001", "http://127.0.0.1:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -234,6 +238,40 @@ async def get_task(task_id: str):
     return task_manager.tasks[task_id]
 
 
+@app.post("/upload")
+async def upload_file(file: UploadFile = File(...)):
+    try:
+        # Create uploads directory if it doesn't exist
+        upload_dir = "uploads"
+        if not os.path.exists(upload_dir):
+            os.makedirs(upload_dir)
+        
+        # Save the file
+        file_path = os.path.join(upload_dir, file.filename)
+        with open(file_path, "wb") as buffer:
+            contents = await file.read()
+            buffer.write(contents)
+
+        agent = Manus(
+            name="Manus",
+            description="A versatile agent that can solve various tasks using multiple tools",
+            max_steps=30,
+        )
+        
+        result = await agent.run(f"You're a VC analyst. Please analyze the file {file_path} and help me understand the company whether I should invest or not.")
+        print(result)
+
+
+        
+            
+        return {"filename": file.filename, "path": file_path}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to upload file: {str(e)}")
+    
+
+
+
+
 @app.exception_handler(Exception)
 async def generic_exception_handler(request: Request, exc: Exception):
     return JSONResponse(
@@ -243,5 +281,5 @@ async def generic_exception_handler(request: Request, exc: Exception):
 
 if __name__ == "__main__":
     import uvicorn
-
+    
     uvicorn.run(app, host="localhost", port=5172)
