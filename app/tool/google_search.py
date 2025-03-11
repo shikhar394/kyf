@@ -5,11 +5,12 @@ from googlesearch import search
 
 from app.tool.base import BaseTool
 
+#TODO: Focus on crunchbase, linkedin, and twitter.
 
 class GoogleSearch(BaseTool):
     name: str = "google_search"
     description: str = """Perform a Google search and return a list of relevant links.
-Use this tool when you need to find information on the web, get up-to-date data, or research specific topics.
+Use this tool when you need to find information on the web, get up-to-date data, or research specific topics. Only focus on crunchbase, linkedin, and twitter.
 The tool returns a list of URLs that match the search query.
 """
     parameters: dict = {

@@ -138,6 +138,7 @@ class ToolCallAgent(ReActAgent):
 
             # Execute the tool
             logger.info(f"🔧 Activating tool: '{name}'...")
+
             result = await self.available_tools.execute(name=name, tool_input=args)
 
             # Format result for display

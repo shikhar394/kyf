@@ -2,7 +2,7 @@ import threading
 from typing import Dict
 
 from app.tool.base import BaseTool
-
+from app.logger import logger
 
 class PythonExecute(BaseTool):
     """A tool for executing Python code with timeout and safety restrictions."""
@@ -46,6 +46,8 @@ class PythonExecute(BaseTool):
 
                 output_buffer = StringIO()
                 sys.stdout = output_buffer
+
+                logger.info(code)
 
                 exec(code, safe_globals, {})
 
